@@ -10,7 +10,7 @@ public class task1 {
         Random random = new Random();
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
-                array[i][j] = random.nextInt(10);
+                array[i][j] = random.nextInt(19);
             }
         }
         for (int[] element : array) {
@@ -29,7 +29,9 @@ public class task1 {
                 }
             }
         }
-        if (c) System.out.println("Число входит в массив");
+        if (c) {
+            System.out.println("Число входит в массив");
+        }else System.out.println("Число не входит в массив");
     }
 }
 
