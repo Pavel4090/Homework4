@@ -20,15 +20,16 @@ public class task1 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите число для проверки: ");
         num = sc.nextInt();
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-                if (num == array[i][j]) {
-                    System.out.println("Введённое число входит в массив");
-                } else {
-                    System.out.println("Введённое число не входит в массив");
+        boolean c = false;
+        for (int[] ints : array) {
+            for (int anInt : ints) {
+                if (num == anInt) {
+                    c = true;
+                    break;
                 }
             }
         }
+        if (c) System.out.println("Число входит в массив");
     }
 }
 
