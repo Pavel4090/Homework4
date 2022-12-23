@@ -31,7 +31,7 @@ public class task1 {
         }
         if (c) {
             System.out.println("Число входит в массив");
-        }else System.out.println("Число не входит в массив");
+        } else System.out.println("Число не входит в массив");
     }
 }
 
