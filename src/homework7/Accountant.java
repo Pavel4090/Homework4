@@ -9,7 +9,7 @@ public class Accountant implements PositionStamp {
     }
 
     @Override
-    public void Print() {
+    public void print() {
         System.out.println(name);
     }
 }

@@ -8,7 +8,7 @@ public class Worker implements PositionStamp {
     }
 
     @Override
-    public void Print() {
+    public void print() {
         System.out.println(name);
     }
 }
