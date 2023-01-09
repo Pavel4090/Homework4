@@ -13,6 +13,7 @@ public class HDD {
         System.out.println("HDD volume " + volume);
         System.out.println("HDD type " + type);
     }
+
     HDD() {
         System.out.println("HDD volume " + volume);
     }

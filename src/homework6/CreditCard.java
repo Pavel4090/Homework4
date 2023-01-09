@@ -7,7 +7,7 @@ public class CreditCard {
     Integer accountNumber;
     double summaOnAccount;
 
-    public void card() {
+    public void CreateCard() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите номер счёта");
         accountNumber = sc.nextInt();
@@ -16,6 +16,7 @@ public class CreditCard {
         System.out.println("Номер счёта " + accountNumber);
         System.out.println("Сумма на счету " + summaOnAccount);
     }
+
     public void cardplus() {
         System.out.println("Введите сумму для пополнения баланса");
         Scanner sx = new Scanner(System.in);

@@ -7,6 +7,7 @@ public class RAM {
     RAM() {
         System.out.println("RAM volume " + volume);
     }
+
     RAM(String n, double vol) {
         name = n;
         volume = vol;
