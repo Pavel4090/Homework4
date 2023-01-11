@@ -1,25 +1,32 @@
 package AdditionalTask1;
 
 public class Computer {
-    int cost;
-    String model;
-    String name1;
-    String name2;
+    private final int cost;
+    private final String model;
+    private final Ram ram;
+    private final Hdd hdd;
 
-    Computer(int cos, String name) {
-        this.cost = cos;
-        this.model = name;
-        System.out.println("Computer cost " + cost);
-        System.out.println("Computer model " + model);
+    Computer(int cost, String model) {
+        this.cost = cost;
+        this.model = model;
+        this.ram = new Ram();
+        this.hdd = new Hdd();
     }
 
-    Computer(int cos, String name, String n1, String n2) {
-        this.cost = cos;
+    Computer(int cost, String name, Ram ram, Hdd hdd) {
+        this.cost = cost;
         this.model = name;
-        this.name1 = n1;
-        this.name2 = n2;
-        System.out.println("Computer cost " + cost);
-        System.out.println("Computer model " + model);
+        this.ram = ram;
+        this.hdd = hdd;
     }
 
+    @Override
+    public String toString() {
+        return "Computer parameters are {" +
+                "cost=" + cost +
+                ", model='" + model + '\'' +
+                ", " + ram +
+                ", " + hdd +
+                '}';
+    }
 }
