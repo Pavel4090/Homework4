@@ -16,15 +16,12 @@ public class Task2 {
         for (int[] element : array) {
             System.out.println(Arrays.toString(element));
         }
-        int num;
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите число для проверки: ");
-        num = sc.nextInt();
+        int num = sc.nextInt();
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
-               if (num == array[i][j]) {
-                   array[i][j] = 0;
-               }
+               if (num == array[i][j]) array[i][j] = 0;
             }
         }
         for (int[] element : array) {
